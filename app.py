@@ -1,0 +1,14 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return "Hello from Azure Web App! This is a Python Flask demo."
+
+@app.route('/about')
+def about():
+    return "This is the about page of our demo app."
+
+if __name__ == '__main__':
+    app.run()
