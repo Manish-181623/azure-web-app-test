@@ -6,7 +6,7 @@ def create_app():
     @app.route('/')
     def hello():
         return "Hello from Azure Web App! This is a Python Flask demo.Is this working?" \
-        "Yes, it is working!"
+        "Yes, it is working fine!"
     
     @app.route('/about')
     def about():
